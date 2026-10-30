@@ -1,0 +1,996 @@
+{
+  "schemaVersion": 1,
+  "regions": [
+    {
+      "id": 1,
+      "name": "Whisker Lane",
+      "ground": "assets/map/peach-ground.jpg",
+      "mapProps": "assets/world/region-01/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    },
+    {
+      "id": 2,
+      "name": "Bosque de las Moras",
+      "ground": "assets/map/forest-ground.jpg",
+      "mapProps": "assets/world/region-02/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    },
+    {
+      "id": 3,
+      "name": "Costa de Coral",
+      "ground": "assets/world/region-03/ground.webp",
+      "mapProps": "assets/world/region-03/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    },
+    {
+      "id": 4,
+      "name": "Cumbres de Miel",
+      "ground": "assets/world/region-04/ground.webp",
+      "mapProps": "assets/world/region-04/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    },
+    {
+      "id": 5,
+      "name": "Jardines de la Luna",
+      "ground": "assets/world/region-05/ground.webp",
+      "mapProps": "assets/world/region-05/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    },
+    {
+      "id": 6,
+      "name": "Santuario del Dragón",
+      "ground": "assets/world/region-06/ground.webp",
+      "mapProps": "assets/world/region-06/map-props.webp",
+      "gameBackground": "assets/glow-background.png",
+      "gameForeground": "assets/glow-foreground.png"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "name": "Morning at Miso's",
+      "region": 1,
+      "levels": [
+        1,
+        10
+      ],
+      "background": "assets/world/region-01/gameplay/01-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/01-foreground.webp",
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": true
+    },
+    {
+      "id": 2,
+      "name": "The Flower Courtyard",
+      "region": 1,
+      "levels": [
+        11,
+        20
+      ],
+      "background": "assets/world/region-01/gameplay/02-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/02-foreground-v2.webp",
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": true
+    },
+    {
+      "id": 3,
+      "name": "Bookshop Naps",
+      "region": 1,
+      "levels": [
+        21,
+        30
+      ],
+      "background": "assets/world/region-01/gameplay/03-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/03-foreground.webp",
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 4,
+      "name": "Riverside Market",
+      "region": 1,
+      "levels": [
+        31,
+        40
+      ],
+      "background": "assets/world/region-01/gameplay/04-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/04-foreground.webp",
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 5,
+      "name": "Craft Room Tangles",
+      "region": 1,
+      "levels": [
+        41,
+        50
+      ],
+      "background": "assets/world/region-01/gameplay/05-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/05-foreground-v2.webp",
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": true
+    },
+    {
+      "id": 6,
+      "name": "Orchard Picnic",
+      "region": 1,
+      "levels": [
+        51,
+        60
+      ],
+      "background": "assets/world/region-01/gameplay/06-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/06-foreground.webp",
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 7,
+      "name": "Clover Garden",
+      "region": 1,
+      "levels": [
+        61,
+        70
+      ],
+      "background": "assets/world/region-01/gameplay/07-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/07-foreground.webp",
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 8,
+      "name": "The Old Mill Bakery",
+      "region": 1,
+      "levels": [
+        71,
+        80
+      ],
+      "background": "assets/world/region-01/gameplay/08-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/08-foreground.webp",
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 9,
+      "name": "Lantern Lane",
+      "region": 1,
+      "levels": [
+        81,
+        90
+      ],
+      "background": "assets/world/region-01/gameplay/09-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/09-foreground.webp",
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": true
+    },
+    {
+      "id": 10,
+      "name": "The Grand Tasting Party",
+      "region": 1,
+      "levels": [
+        91,
+        100
+      ],
+      "background": "assets/world/region-01/gameplay/10-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/10-foreground.webp",
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 11,
+      "name": "Umbral del bosque",
+      "region": 2,
+      "levels": [
+        101,
+        110
+      ],
+      "background": "assets/world/region-02/chapters/11-background.webp",
+      "foreground": "assets/world/region-02/chapters/11-foreground.webp",
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": true
+    },
+    {
+      "id": 12,
+      "name": "Setas del rocío",
+      "region": 2,
+      "levels": [
+        111,
+        120
+      ],
+      "background": "assets/world/region-02/chapters/12-background.webp",
+      "foreground": "assets/world/region-02/chapters/12-foreground.webp",
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": true
+    },
+    {
+      "id": 13,
+      "name": "El arroyo azul",
+      "region": 2,
+      "levels": [
+        121,
+        130
+      ],
+      "background": "assets/world/region-02/chapters/13-background.webp",
+      "foreground": "assets/world/region-02/chapters/13-foreground.webp",
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 14,
+      "name": "Nidos entre ramas",
+      "region": 2,
+      "levels": [
+        131,
+        140
+      ],
+      "background": "assets/world/region-02/chapters/14-background.webp",
+      "foreground": "assets/world/region-02/chapters/14-foreground.webp",
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 15,
+      "name": "Las zarzas",
+      "region": 2,
+      "levels": [
+        141,
+        150
+      ],
+      "background": "assets/world/region-02/chapters/15-background.webp",
+      "foreground": "assets/world/region-02/chapters/15-foreground.webp",
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": true
+    },
+    {
+      "id": 16,
+      "name": "Senderos de musgo",
+      "region": 2,
+      "levels": [
+        151,
+        160
+      ],
+      "background": "assets/world/region-02/chapters/16-background.webp",
+      "foreground": "assets/world/region-02/chapters/16-foreground.webp",
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 17,
+      "name": "La charca",
+      "region": 2,
+      "levels": [
+        161,
+        170
+      ],
+      "background": "assets/world/region-02/chapters/17-background.webp",
+      "foreground": "assets/world/region-02/chapters/17-foreground.webp",
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 18,
+      "name": "Luciérnagas",
+      "region": 2,
+      "levels": [
+        171,
+        180
+      ],
+      "background": "assets/world/region-02/chapters/18-background.webp",
+      "foreground": "assets/world/region-02/chapters/18-foreground.webp",
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 19,
+      "name": "El roble antiguo",
+      "region": 2,
+      "levels": [
+        181,
+        190
+      ],
+      "background": "assets/world/region-02/chapters/19-background.webp",
+      "foreground": "assets/world/region-02/chapters/19-foreground.webp",
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": true
+    },
+    {
+      "id": 20,
+      "name": "El festín de moras",
+      "region": 2,
+      "levels": [
+        191,
+        200
+      ],
+      "background": "assets/world/region-02/chapters/20-background.webp",
+      "foreground": "assets/world/region-02/chapters/20-foreground.webp",
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": true
+    },
+    {
+      "id": 21,
+      "name": "La playa de las conchas",
+      "region": 3,
+      "levels": [
+        201,
+        210
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": false
+    },
+    {
+      "id": 22,
+      "name": "Pozas turquesa",
+      "region": 3,
+      "levels": [
+        211,
+        220
+      ],
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 23,
+      "name": "Los arrecifes",
+      "region": 3,
+      "levels": [
+        221,
+        230
+      ],
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 24,
+      "name": "La cala escondida",
+      "region": 3,
+      "levels": [
+        231,
+        240
+      ],
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 25,
+      "name": "Barcas de papel",
+      "region": 3,
+      "levels": [
+        241,
+        250
+      ],
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 26,
+      "name": "El faro",
+      "region": 3,
+      "levels": [
+        251,
+        260
+      ],
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 27,
+      "name": "Jardines de sal",
+      "region": 3,
+      "levels": [
+        261,
+        270
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 28,
+      "name": "Puentes de coral",
+      "region": 3,
+      "levels": [
+        271,
+        280
+      ],
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 29,
+      "name": "La marea dorada",
+      "region": 3,
+      "levels": [
+        281,
+        290
+      ],
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": false
+    },
+    {
+      "id": 30,
+      "name": "Banquete junto al mar",
+      "region": 3,
+      "levels": [
+        291,
+        300
+      ],
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 31,
+      "name": "Las laderas",
+      "region": 4,
+      "levels": [
+        301,
+        310
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": false
+    },
+    {
+      "id": 32,
+      "name": "Terrazas de miel",
+      "region": 4,
+      "levels": [
+        311,
+        320
+      ],
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 33,
+      "name": "El paso estrecho",
+      "region": 4,
+      "levels": [
+        321,
+        330
+      ],
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 34,
+      "name": "Puentes de cuerda",
+      "region": 4,
+      "levels": [
+        331,
+        340
+      ],
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 35,
+      "name": "El huerto alto",
+      "region": 4,
+      "levels": [
+        341,
+        350
+      ],
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 36,
+      "name": "La cueva ámbar",
+      "region": 4,
+      "levels": [
+        351,
+        360
+      ],
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 37,
+      "name": "El mirador",
+      "region": 4,
+      "levels": [
+        361,
+        370
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 38,
+      "name": "Las agujas suaves",
+      "region": 4,
+      "levels": [
+        371,
+        380
+      ],
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 39,
+      "name": "El refugio",
+      "region": 4,
+      "levels": [
+        381,
+        390
+      ],
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": false
+    },
+    {
+      "id": 40,
+      "name": "La mesa de la cumbre",
+      "region": 4,
+      "levels": [
+        391,
+        400
+      ],
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 41,
+      "name": "El jardín nocturno",
+      "region": 5,
+      "levels": [
+        401,
+        410
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": false
+    },
+    {
+      "id": 42,
+      "name": "Flores de luna",
+      "region": 5,
+      "levels": [
+        411,
+        420
+      ],
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 43,
+      "name": "Espejos del estanque",
+      "region": 5,
+      "levels": [
+        421,
+        430
+      ],
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 44,
+      "name": "El paseo de jade",
+      "region": 5,
+      "levels": [
+        431,
+        440
+      ],
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 45,
+      "name": "La pérgola",
+      "region": 5,
+      "levels": [
+        441,
+        450
+      ],
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 46,
+      "name": "Semillas de estrellas",
+      "region": 5,
+      "levels": [
+        451,
+        460
+      ],
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 47,
+      "name": "El laberinto de hojas",
+      "region": 5,
+      "levels": [
+        461,
+        470
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 48,
+      "name": "El observatorio",
+      "region": 5,
+      "levels": [
+        471,
+        480
+      ],
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 49,
+      "name": "El patio del eclipse",
+      "region": 5,
+      "levels": [
+        481,
+        490
+      ],
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": false
+    },
+    {
+      "id": 50,
+      "name": "Cena bajo la luna",
+      "region": 5,
+      "levels": [
+        491,
+        500
+      ],
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 51,
+      "name": "La puerta del santuario",
+      "region": 6,
+      "levels": [
+        501,
+        510
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        2
+      ],
+      "playable": false
+    },
+    {
+      "id": 52,
+      "name": "El patio de jade",
+      "region": 6,
+      "levels": [
+        511,
+        520
+      ],
+      "mapLandmarks": [
+        0,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 53,
+      "name": "Jardines suspendidos",
+      "region": 6,
+      "levels": [
+        521,
+        530
+      ],
+      "mapLandmarks": [
+        1,
+        2,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 54,
+      "name": "El puente de nubes",
+      "region": 6,
+      "levels": [
+        531,
+        540
+      ],
+      "mapLandmarks": [
+        0,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 55,
+      "name": "El salón de los ecos",
+      "region": 6,
+      "levels": [
+        541,
+        550
+      ],
+      "mapLandmarks": [
+        1,
+        3,
+        4
+      ],
+      "playable": false
+    },
+    {
+      "id": 56,
+      "name": "La fuente antigua",
+      "region": 6,
+      "levels": [
+        551,
+        560
+      ],
+      "mapLandmarks": [
+        2,
+        3,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 57,
+      "name": "El árbol de los recuerdos",
+      "region": 6,
+      "levels": [
+        561,
+        570
+      ],
+      "mapLandmarks": [
+        0,
+        1,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 58,
+      "name": "La escalera dorada",
+      "region": 6,
+      "levels": [
+        571,
+        580
+      ],
+      "mapLandmarks": [
+        1,
+        4,
+        5
+      ],
+      "playable": false
+    },
+    {
+      "id": 59,
+      "name": "El último umbral",
+      "region": 6,
+      "levels": [
+        581,
+        590
+      ],
+      "mapLandmarks": [
+        0,
+        2,
+        3
+      ],
+      "playable": false
+    },
+    {
+      "id": 60,
+      "name": "El gran banquete",
+      "region": 6,
+      "levels": [
+        591,
+        600
+      ],
+      "mapLandmarks": [
+        2,
+        4,
+        5
+      ],
+      "playable": false
+    }
+  ],
+  "publishedThroughLevel": 200
+}

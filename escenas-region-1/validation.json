@@ -1,0 +1,12 @@
+{
+  "scene_count": 10,
+  "png_count": 41,
+  "asset_hashes_match_sources": true,
+  "animal_motion": "static",
+  "qa": {
+    "animal_motion": "static",
+    "visit_cycle_removed": true,
+    "ambient_motion_preserved": true,
+    "verification": "JavaScript syntax and asset source integrity"
+  }
+}

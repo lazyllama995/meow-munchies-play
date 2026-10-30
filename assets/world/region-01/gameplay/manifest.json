@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "friends": "removed",
+  "scenes": [
+    {
+      "chapter": 1,
+      "title": "Morning at Miso's",
+      "background": "assets/world/region-01/gameplay/01-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/01-foreground.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 2,
+      "title": "The Flower Courtyard",
+      "background": "assets/world/region-01/gameplay/02-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/02-foreground-v2.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 3,
+      "title": "Bookshop Naps",
+      "background": "assets/world/region-01/gameplay/03-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/03-foreground.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 4,
+      "title": "Riverside Market",
+      "background": "assets/world/region-01/gameplay/04-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/04-foreground.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 5,
+      "title": "Craft Room Tangles",
+      "background": "assets/world/region-01/gameplay/05-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/05-foreground-v2.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 6,
+      "title": "Orchard Picnic",
+      "background": "assets/world/region-01/gameplay/06-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/06-foreground.webp",
+      "ambient": [
+        {
+          "name": "globo-pera",
+          "src": "assets/world/region-01/gameplay/globo-pera.webp",
+          "x": 10,
+          "y": 19,
+          "width": 24.038338658146966,
+          "pivot": [
+            0.50159,
+            0.49801
+          ],
+          "motion": "float"
+        },
+        {
+          "name": "globo-melocoton",
+          "src": "assets/world/region-01/gameplay/globo-melocoton.webp",
+          "x": 90,
+          "y": 20,
+          "width": 19.04617253948967,
+          "pivot": [
+            0.5004,
+            0.50439
+          ],
+          "motion": "float"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Clover Garden",
+      "background": "assets/world/region-01/gameplay/07-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/07-foreground.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 8,
+      "title": "The Old Mill Bakery",
+      "background": "assets/world/region-01/gameplay/08-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/08-foreground.webp",
+      "ambient": [
+        {
+          "name": "molino-aspas",
+          "src": "assets/world/region-01/gameplay/molino-aspas.webp",
+          "x": 87.7,
+          "y": 61.2,
+          "width": 32.586021505376344,
+          "pivot": [
+            0.5,
+            0.515
+          ],
+          "motion": "rotate"
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "Lantern Lane",
+      "background": "assets/world/region-01/gameplay/09-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/09-foreground.webp",
+      "ambient": []
+    },
+    {
+      "chapter": 10,
+      "title": "The Grand Tasting Party",
+      "background": "assets/world/region-01/gameplay/10-background-v2.webp",
+      "foreground": "assets/world/region-01/gameplay/10-foreground.webp",
+      "ambient": []
+    }
+  ],
+  "provenance": [
+    {
+      "path": "assets/world/region-01/gameplay/01-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-01-el-nido-de-petalos.png",
+      "sourceSha256": "72820ab1dbefc6b74f4ddfa5571054e99618f30969a5910d15bc686e90c06c8a",
+      "bytes": 126816
+    },
+    {
+      "path": "assets/world/region-01/gameplay/01-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-01-el-nido-de-petalos.png",
+      "sourceSha256": "3c08f3222d71b3cc33b5a19d7b9958c34b298ab12de57c16bae15af353420de9",
+      "bytes": 34620
+    },
+    {
+      "path": "assets/world/region-01/gameplay/02-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-02-el-puente-del-castor.png",
+      "sourceSha256": "03780148314ef4e50978292a8601e645f0c7f4fd51735c8ae03af37d6e454539",
+      "bytes": 149248
+    },
+    {
+      "path": "assets/world/region-01/gameplay/02-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-02-el-puente-del-castor.png",
+      "sourceSha256": "3d8914c4ac4f5230680d68174f5d38dc7213b4c259f64fbbcc92c2c715dcb951",
+      "bytes": 46898
+    },
+    {
+      "path": "assets/world/region-01/gameplay/03-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-03-el-huerto-de-los-topos.png",
+      "sourceSha256": "2a5a3f17e3e3c03d61a9fe7d0b4f0169ff48bac3ced1a22bfe9777ba8c3f4f9e",
+      "bytes": 139384
+    },
+    {
+      "path": "assets/world/region-01/gameplay/03-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-03-el-huerto-de-los-topos.png",
+      "sourceSha256": "524cd72dfb29f405baca06e101a8910611c44e2b61f6d808c8ae9b8b0697ada5",
+      "bytes": 42458
+    },
+    {
+      "path": "assets/world/region-01/gameplay/04-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-04-la-merienda-de-las-hormigas.png",
+      "sourceSha256": "5917f6ec245fa927f1c806992642c0c884aebe2d9f9f77502bd51d00d160d291",
+      "bytes": 128022
+    },
+    {
+      "path": "assets/world/region-01/gameplay/04-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-04-la-merienda-de-las-hormigas.png",
+      "sourceSha256": "871ebd2a178ebd9c3e9e9a2508a5dc9431b6e8ed3b88adf13fd5edc8961ac789",
+      "bytes": 30938
+    },
+    {
+      "path": "assets/world/region-01/gameplay/05-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-05-el-arroyo-de-las-ranas.png",
+      "sourceSha256": "ae4e9927691ae0942c68a3215187f1dbdd6a51960f0f1acf4dea4991e5598b29",
+      "bytes": 118824
+    },
+    {
+      "path": "assets/world/region-01/gameplay/05-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-05-el-arroyo-de-las-ranas.png",
+      "sourceSha256": "cd080ca0670a96347ec7a454f6c5d93f7b450723bcc771eba1790a8ecef563f4",
+      "bytes": 43804
+    },
+    {
+      "path": "assets/world/region-01/gameplay/06-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-06-las-colinas-de-los-globos.png",
+      "sourceSha256": "38e9bedf8a3fbb274da2c0471b0bb6a9930bc3ca928d722ccab06f8a14fce483",
+      "bytes": 128350
+    },
+    {
+      "path": "assets/world/region-01/gameplay/06-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-06-las-colinas-de-los-globos.png",
+      "sourceSha256": "8c39be450e7b58c53c74d622af9612d3d967063634ef1882a23ccb5e8784eb59",
+      "bytes": 39108
+    },
+    {
+      "path": "assets/world/region-01/gameplay/globo-pera.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/globos/globo-pera.png",
+      "sourceSha256": "9c59b266eb66b158405ac34be9f9fc0311620a775be5ef95e3660bd606265252",
+      "bytes": 40058
+    },
+    {
+      "path": "assets/world/region-01/gameplay/globo-melocoton.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/globos/globo-melocoton.png",
+      "sourceSha256": "200735ddc36c3aa186795d30ec12460ef000a10c8a7044da51d571f84160e1a7",
+      "bytes": 47678
+    },
+    {
+      "path": "assets/world/region-01/gameplay/07-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-07-el-laberinto-de-trebol.png",
+      "sourceSha256": "6f0baf12b5bb9902265b232c07d67a49f2cace623cefc45ff24c80b948bdc093",
+      "bytes": 115980
+    },
+    {
+      "path": "assets/world/region-01/gameplay/07-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-07-el-laberinto-de-trebol.png",
+      "sourceSha256": "0d3bd6530227e6f70c773d1020311d69593af2464083540365b12e3b5bba9c71",
+      "bytes": 46750
+    },
+    {
+      "path": "assets/world/region-01/gameplay/08-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-08-el-molino-de-las-nubes.png",
+      "sourceSha256": "793edfd50f5705888c424a2352bb0c22146313bf48b5c7ad9d14149d3ef7f16f",
+      "bytes": 164616
+    },
+    {
+      "path": "assets/world/region-01/gameplay/08-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-08-el-molino-de-las-nubes.png",
+      "sourceSha256": "65be943b1aa3708199e0926e259f2ac2fec643d8099929641d831ca7c71ba2ed",
+      "bytes": 37530
+    },
+    {
+      "path": "assets/world/region-01/gameplay/molino-aspas.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/decoracion/molino-aspas.png",
+      "sourceSha256": "9d2c6faddce8bb03cfa04c0c494435881cc302d0f95adb38f9325deaaaf942f9",
+      "bytes": 63334
+    },
+    {
+      "path": "assets/world/region-01/gameplay/09-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-09-el-claro-de-las-luciernagas.png",
+      "sourceSha256": "734f9792b06f98df7655844aec6da412d7a6fc3ddcdc94e101b59ae4e68499a2",
+      "bytes": 108944
+    },
+    {
+      "path": "assets/world/region-01/gameplay/09-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-09-el-claro-de-las-luciernagas.png",
+      "sourceSha256": "11dbe4fb618cd32121d43036869b1202168677f0ffbac83ab4f195174c5f01c7",
+      "bytes": 36656
+    },
+    {
+      "path": "assets/world/region-01/gameplay/10-background-v2.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/fondos/fondo-10-la-gran-fiesta.png",
+      "sourceSha256": "4bf1b7ad1c2852447aa683a4fa4268d027943e8f3b2416f80e4d0ff357a08f83",
+      "bytes": 179902
+    },
+    {
+      "path": "assets/world/region-01/gameplay/10-foreground.webp",
+      "source": "output/imagegen/region-01-escenas-animadas-v1/assets/delanteras/delantera-10-la-gran-fiesta.png",
+      "sourceSha256": "80c6d4a27130794fc3ce3e41dd5295e698ed55632f0971bad4cec6ef833878df",
+      "bytes": 31488
+    },
+    {
+      "path": "assets/world/region-01/gameplay/02-foreground-v2.webp",
+      "source": "output/imagegen/gameplay-foreground-cleanup-v2/png/normal-02.png",
+      "sourceSha256": "e510d2ff2cbe8ff6d7bbd15fdfdc88e8258eeb58a8cc6a62a5cb109b0ce1ca74",
+      "bytes": 43190,
+      "generator": "built-in image_gen",
+      "edit": "Foreground-only corner rocks and plants; no water or landscape strip."
+    },
+    {
+      "path": "assets/world/region-01/gameplay/05-foreground-v2.webp",
+      "source": "output/imagegen/gameplay-foreground-cleanup-v2/png/normal-05.png",
+      "sourceSha256": "8da1058926398adcb0686353ccdba426261fefe8760bade1acc9536218b9b9b2",
+      "bytes": 43122,
+      "generator": "built-in image_gen",
+      "edit": "Foreground-only corner rocks and plants; no water or landscape strip."
+    },
+    {
+      "path": "assets/world/region-01/gameplay/storybook/02-foreground-v2.webp",
+      "source": "output/imagegen/gameplay-foreground-cleanup-v2/png/storybook-02.png",
+      "sourceSha256": "a8dc1b02b6716a31c248084d9950e86b0829ab0c82b6dd9429840ee75da1c93b",
+      "bytes": 27810,
+      "generator": "built-in image_gen",
+      "edit": "Foreground-only corner rocks and plants; no water or landscape strip."
+    },
+    {
+      "path": "assets/world/region-01/gameplay/storybook/05-foreground-v2.webp",
+      "source": "output/imagegen/gameplay-foreground-cleanup-v2/png/storybook-05.png",
+      "sourceSha256": "371c03ed6ea5a091cccd068c5551b52af8da586c4f1071ffda275514bb3167e9",
+      "bytes": 31624,
+      "generator": "built-in image_gen",
+      "edit": "Foreground-only corner rocks and plants; no water or landscape strip."
+    }
+  ]
+}

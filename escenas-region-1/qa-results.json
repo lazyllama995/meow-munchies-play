@@ -1,0 +1,6 @@
+{
+  "animal_motion": "static",
+  "visit_cycle_removed": true,
+  "ambient_motion_preserved": true,
+  "verification": "JavaScript syntax and asset source integrity"
+}

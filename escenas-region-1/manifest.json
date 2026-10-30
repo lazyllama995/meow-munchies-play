@@ -1,0 +1,520 @@
+{
+  "scene_count": 10,
+  "animal_motion": "static",
+  "files": [
+    {
+      "file": "assets/fondos/fondo-01-el-nido-de-petalos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-01-el-nido-de-petalos.png",
+      "sha256": "72820ab1dbefc6b74f4ddfa5571054e99618f30969a5910d15bc686e90c06c8a",
+      "bytes": 1960941
+    },
+    {
+      "file": "assets/delanteras/delantera-01-el-nido-de-petalos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-01-el-nido-de-petalos.png",
+      "sha256": "3c08f3222d71b3cc33b5a19d7b9958c34b298ab12de57c16bae15af353420de9",
+      "bytes": 168673
+    },
+    {
+      "file": "assets/animales/conejo-blanco.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/conejo-blanco.png",
+      "sha256": "63fd542233a02f2cc6654d19f54d702a8c43f2eb9156af998591f6d959a8aa8e",
+      "bytes": 954701
+    },
+    {
+      "file": "assets/fondos/fondo-02-el-puente-del-castor.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-02-el-puente-del-castor.png",
+      "sha256": "03780148314ef4e50978292a8601e645f0c7f4fd51735c8ae03af37d6e454539",
+      "bytes": 1991796
+    },
+    {
+      "file": "assets/delanteras/delantera-02-el-puente-del-castor.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-02-el-puente-del-castor.png",
+      "sha256": "3d8914c4ac4f5230680d68174f5d38dc7213b4c259f64fbbcc92c2c715dcb951",
+      "bytes": 237317
+    },
+    {
+      "file": "assets/animales/castor-carpintero.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/castor-carpintero.png",
+      "sha256": "08e8387fe54af85f987ffa19b0a780c9d1e8a2f4af60ea65bc5233d5c3d2c400",
+      "bytes": 1435787
+    },
+    {
+      "file": "assets/fondos/fondo-03-el-huerto-de-los-topos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-03-el-huerto-de-los-topos.png",
+      "sha256": "2a5a3f17e3e3c03d61a9fe7d0b4f0169ff48bac3ced1a22bfe9777ba8c3f4f9e",
+      "bytes": 1967563
+    },
+    {
+      "file": "assets/delanteras/delantera-03-el-huerto-de-los-topos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-03-el-huerto-de-los-topos.png",
+      "sha256": "524cd72dfb29f405baca06e101a8910611c44e2b61f6d808c8ae9b8b0697ada5",
+      "bytes": 202290
+    },
+    {
+      "file": "assets/animales/topo-hortelano.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/topo-hortelano.png",
+      "sha256": "5cfbc4309d9cca6b9eb3a08423f62692cc04d5eb566d416e0122dbdf9312cdb5",
+      "bytes": 1393520
+    },
+    {
+      "file": "assets/animales/topo-cosechador.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/topo-cosechador.png",
+      "sha256": "03c7951cb5ee0e23f4441288cfd4f8a5d8f53d8d473c311fcfd0023660a74e47",
+      "bytes": 1479772
+    },
+    {
+      "file": "assets/fondos/fondo-04-la-merienda-de-las-hormigas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-04-la-merienda-de-las-hormigas.png",
+      "sha256": "5917f6ec245fa927f1c806992642c0c884aebe2d9f9f77502bd51d00d160d291",
+      "bytes": 1959505
+    },
+    {
+      "file": "assets/delanteras/delantera-04-la-merienda-de-las-hormigas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-04-la-merienda-de-las-hormigas.png",
+      "sha256": "871ebd2a178ebd9c3e9e9a2508a5dc9431b6e8ed3b88adf13fd5edc8961ac789",
+      "bytes": 158376
+    },
+    {
+      "file": "assets/animales/hormiga-miga.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/hormiga-miga.png",
+      "sha256": "0cfe627d464c175ca2d7a0971e910502da5958b4153a2eb069f65fb784b87eb3",
+      "bytes": 1175892
+    },
+    {
+      "file": "assets/animales/hormiga-fresa.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/hormiga-fresa.png",
+      "sha256": "cb0dfabb0c0368d58664310903b60db5f127b624baea53c7703cff5a920d2d25",
+      "bytes": 1298472
+    },
+    {
+      "file": "assets/animales/hormiga-arandano.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/hormiga-arandano.png",
+      "sha256": "7536fa69ae61ddc77ddb0ec03d5efa06b52082a835e668efbd413c827852b1a4",
+      "bytes": 1044482
+    },
+    {
+      "file": "assets/fondos/fondo-05-el-arroyo-de-las-ranas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-05-el-arroyo-de-las-ranas.png",
+      "sha256": "ae4e9927691ae0942c68a3215187f1dbdd6a51960f0f1acf4dea4991e5598b29",
+      "bytes": 1922918
+    },
+    {
+      "file": "assets/delanteras/delantera-05-el-arroyo-de-las-ranas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-05-el-arroyo-de-las-ranas.png",
+      "sha256": "cd080ca0670a96347ec7a454f6c5d93f7b450723bcc771eba1790a8ecef563f4",
+      "bytes": 236145
+    },
+    {
+      "file": "assets/animales/rana-sentada.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/rana-sentada.png",
+      "sha256": "ebefbe7cbb9e8b909a1682e8885dbb816b6c2980852e65e2fbf220a52a295c37",
+      "bytes": 1447330
+    },
+    {
+      "file": "assets/fondos/fondo-06-las-colinas-de-los-globos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-06-las-colinas-de-los-globos.png",
+      "sha256": "38e9bedf8a3fbb274da2c0471b0bb6a9930bc3ca928d722ccab06f8a14fce483",
+      "bytes": 1937224
+    },
+    {
+      "file": "assets/delanteras/delantera-06-las-colinas-de-los-globos.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-06-las-colinas-de-los-globos.png",
+      "sha256": "8c39be450e7b58c53c74d622af9612d3d967063634ef1882a23ccb5e8784eb59",
+      "bytes": 183384
+    },
+    {
+      "file": "assets/animales/conejo-globero.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/conejo-globero.png",
+      "sha256": "9000324c2364d16370cd57000916a3237f715f5279a2734918392865c2908c40",
+      "bytes": 1199494
+    },
+    {
+      "file": "assets/globos/globo-pera.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/globos/globo-pera.png",
+      "sha256": "9c59b266eb66b158405ac34be9f9fc0311620a775be5ef95e3660bd606265252",
+      "bytes": 864008
+    },
+    {
+      "file": "assets/globos/globo-melocoton.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/globos/globo-melocoton.png",
+      "sha256": "200735ddc36c3aa186795d30ec12460ef000a10c8a7044da51d571f84160e1a7",
+      "bytes": 1142921
+    },
+    {
+      "file": "assets/fondos/fondo-07-el-laberinto-de-trebol.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-07-el-laberinto-de-trebol.png",
+      "sha256": "6f0baf12b5bb9902265b232c07d67a49f2cace623cefc45ff24c80b948bdc093",
+      "bytes": 1863169
+    },
+    {
+      "file": "assets/delanteras/delantera-07-el-laberinto-de-trebol.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-07-el-laberinto-de-trebol.png",
+      "sha256": "0d3bd6530227e6f70c773d1020311d69593af2464083540365b12e3b5bba9c71",
+      "bytes": 239474
+    },
+    {
+      "file": "assets/animales/mariquita-guia.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/mariquita-guia.png",
+      "sha256": "46ebe2bb4c32d2f9a0ee00c55e48be763987c7518e4f7a107613018c279c5910",
+      "bytes": 1227459
+    },
+    {
+      "file": "assets/fondos/fondo-08-el-molino-de-las-nubes.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-08-el-molino-de-las-nubes.png",
+      "sha256": "793edfd50f5705888c424a2352bb0c22146313bf48b5c7ad9d14149d3ef7f16f",
+      "bytes": 2057326
+    },
+    {
+      "file": "assets/delanteras/delantera-08-el-molino-de-las-nubes.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-08-el-molino-de-las-nubes.png",
+      "sha256": "65be943b1aa3708199e0926e259f2ac2fec643d8099929641d831ca7c71ba2ed",
+      "bytes": 195061
+    },
+    {
+      "file": "assets/animales/raton-panadero.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/raton-panadero.png",
+      "sha256": "5032f23a30d898d1d04a5de1858a427977849803aa360a14b3c1bdf07093749c",
+      "bytes": 974539
+    },
+    {
+      "file": "assets/decoracion/molino-aspas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/decoracion/molino-aspas.png",
+      "sha256": "9d2c6faddce8bb03cfa04c0c494435881cc302d0f95adb38f9325deaaaf942f9",
+      "bytes": 1069621
+    },
+    {
+      "file": "assets/fondos/fondo-09-el-claro-de-las-luciernagas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-09-el-claro-de-las-luciernagas.png",
+      "sha256": "734f9792b06f98df7655844aec6da412d7a6fc3ddcdc94e101b59ae4e68499a2",
+      "bytes": 1876325
+    },
+    {
+      "file": "assets/delanteras/delantera-09-el-claro-de-las-luciernagas.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-09-el-claro-de-las-luciernagas.png",
+      "sha256": "11dbe4fb618cd32121d43036869b1202168677f0ffbac83ab4f195174c5f01c7",
+      "bytes": 210121
+    },
+    {
+      "file": "assets/animales/buho-amigo.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/buho-amigo.png",
+      "sha256": "6a04ea03db2b8076cfde137a3192f01fd5f0708e6ddaff85158219092c1ee5d0",
+      "bytes": 1515682
+    },
+    {
+      "file": "assets/animales/luciernaga.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/luciernaga.png",
+      "sha256": "688af365980b39d3c1baa73f9c1dda6bc8a1cf0dd5d3483ef1ce9a6a6ae705d9",
+      "bytes": 783173
+    },
+    {
+      "file": "assets/fondos/fondo-10-la-gran-fiesta.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-fondos-originales-v3/fondos/fondo-10-la-gran-fiesta.png",
+      "sha256": "4bf1b7ad1c2852447aa683a4fa4268d027943e8f3b2416f80e4d0ff357a08f83",
+      "bytes": 2135490
+    },
+    {
+      "file": "assets/delanteras/delantera-10-la-gran-fiesta.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/delanteras/delantera-10-la-gran-fiesta.png",
+      "sha256": "80c6d4a27130794fc3ce3e41dd5295e698ed55632f0971bad4cec6ef833878df",
+      "bytes": 177228
+    },
+    {
+      "file": "assets/animales/castor-fiesta.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/castor-fiesta.png",
+      "sha256": "92d3e4781161ea05927e619db2e0c427352076c4105d95979501539ba1d2b12d",
+      "bytes": 1382114
+    },
+    {
+      "file": "assets/animales/conejo-fiesta.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/conejo-fiesta.png",
+      "sha256": "919f6107e69d49cdab741c73a390531742b6b7e4df6fcf3164d1ad8382fc890b",
+      "bytes": 1012519
+    },
+    {
+      "file": "assets/animales/raton-fiesta.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/output/imagegen/region-01-gameplay-assets-capas-v2/animales/raton-fiesta.png",
+      "sha256": "f369b1ed9b83e54e919683d1e9feaf1ed25ac49bb8a99d03a3bf5ce8273e6313",
+      "bytes": 1388908
+    },
+    {
+      "file": "assets/shared/glow-dragon.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/assets/glow-dragon.png",
+      "sha256": "01b9c22b8ef0d94af0db0f6e757a89897586470766fe807333a5c18d3eb3962e",
+      "bytes": 1842603
+    },
+    {
+      "file": "assets/shared/glow-marbles.png",
+      "source": "/Users/marcosrecolons/Documents/ChatGPT/MarbleBall/assets/glow-marbles.png",
+      "sha256": "781422f6f7cdbea172fb1eb2e92a0bdc3fe854e27e534a7c4cb28e0bfa4e1164",
+      "bytes": 948478
+    }
+  ],
+  "scenes": [
+    {
+      "chapter": 1,
+      "animals": [
+        [
+          "conejo-blanco",
+          86,
+          91.4,
+          12,
+          "static"
+        ]
+      ],
+      "title": "El nido de pétalos",
+      "background": "assets/fondos/fondo-01-el-nido-de-petalos.png",
+      "foreground": "assets/delanteras/delantera-01-el-nido-de-petalos.png"
+    },
+    {
+      "chapter": 2,
+      "animals": [
+        [
+          "castor-carpintero",
+          13.2,
+          70.6,
+          17.5,
+          "static"
+        ]
+      ],
+      "title": "El puente del castor",
+      "background": "assets/fondos/fondo-02-el-puente-del-castor.png",
+      "foreground": "assets/delanteras/delantera-02-el-puente-del-castor.png"
+    },
+    {
+      "chapter": 3,
+      "animals": [
+        [
+          "topo-hortelano",
+          16,
+          81,
+          14,
+          "static"
+        ],
+        [
+          "topo-cosechador",
+          86,
+          87,
+          14,
+          "static"
+        ]
+      ],
+      "title": "El huerto de los topos",
+      "background": "assets/fondos/fondo-03-el-huerto-de-los-topos.png",
+      "foreground": "assets/delanteras/delantera-03-el-huerto-de-los-topos.png"
+    },
+    {
+      "chapter": 4,
+      "animals": [
+        [
+          "hormiga-miga",
+          6.5,
+          86,
+          6.2,
+          "static"
+        ],
+        [
+          "hormiga-fresa",
+          14.5,
+          88.5,
+          6.2,
+          "static"
+        ],
+        [
+          "hormiga-arandano",
+          23,
+          91,
+          6.2,
+          "static"
+        ]
+      ],
+      "title": "La merienda de las hormigas",
+      "background": "assets/fondos/fondo-04-la-merienda-de-las-hormigas.png",
+      "foreground": "assets/delanteras/delantera-04-la-merienda-de-las-hormigas.png"
+    },
+    {
+      "chapter": 5,
+      "animals": [
+        [
+          "rana-sentada",
+          13.3,
+          77.6,
+          10.4,
+          "static"
+        ],
+        [
+          "rana-sentada",
+          88,
+          80,
+          9.5,
+          "static"
+        ]
+      ],
+      "title": "El arroyo de las ranas",
+      "background": "assets/fondos/fondo-05-el-arroyo-de-las-ranas.png",
+      "foreground": "assets/delanteras/delantera-05-el-arroyo-de-las-ranas.png"
+    },
+    {
+      "chapter": 6,
+      "animals": [
+        [
+          "conejo-globero",
+          15.2,
+          81.8,
+          12.3,
+          "static"
+        ]
+      ],
+      "ambient": [
+        [
+          "globo-pera",
+          10,
+          19,
+          12,
+          "float"
+        ],
+        [
+          "globo-melocoton",
+          90,
+          20,
+          12.5,
+          "float"
+        ]
+      ],
+      "title": "Las colinas de los globos",
+      "background": "assets/fondos/fondo-06-las-colinas-de-los-globos.png",
+      "foreground": "assets/delanteras/delantera-06-las-colinas-de-los-globos.png"
+    },
+    {
+      "chapter": 7,
+      "animals": [
+        [
+          "mariquita-guia",
+          14,
+          90.5,
+          7.5,
+          "static"
+        ]
+      ],
+      "title": "El laberinto de trébol",
+      "background": "assets/fondos/fondo-07-el-laberinto-de-trebol.png",
+      "foreground": "assets/delanteras/delantera-07-el-laberinto-de-trebol.png"
+    },
+    {
+      "chapter": 8,
+      "animals": [
+        [
+          "raton-panadero",
+          23,
+          82,
+          16,
+          "static"
+        ]
+      ],
+      "ambient": [
+        [
+          "molino-aspas",
+          87.7,
+          61.2,
+          29,
+          "rotate"
+        ]
+      ],
+      "title": "El molino de las nubes",
+      "background": "assets/fondos/fondo-08-el-molino-de-las-nubes.png",
+      "foreground": "assets/delanteras/delantera-08-el-molino-de-las-nubes.png"
+    },
+    {
+      "chapter": 9,
+      "animals": [
+        [
+          "buho-amigo",
+          10.7,
+          74.6,
+          13.5,
+          "static"
+        ],
+        [
+          "luciernaga",
+          13,
+          83,
+          1.8,
+          "static"
+        ],
+        [
+          "luciernaga",
+          87,
+          77.5,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          8,
+          65,
+          1.5,
+          "static"
+        ]
+      ],
+      "title": "El claro de las luciérnagas",
+      "background": "assets/fondos/fondo-09-el-claro-de-las-luciernagas.png",
+      "foreground": "assets/delanteras/delantera-09-el-claro-de-las-luciernagas.png"
+    },
+    {
+      "chapter": 10,
+      "animals": [
+        [
+          "castor-fiesta",
+          9.5,
+          80.8,
+          14.5,
+          "static"
+        ],
+        [
+          "conejo-fiesta",
+          25,
+          83.2,
+          12.3,
+          "static"
+        ],
+        [
+          "raton-fiesta",
+          91.5,
+          86.6,
+          13,
+          "static"
+        ],
+        [
+          "rana-sentada",
+          81.8,
+          90.5,
+          10.5,
+          "static"
+        ],
+        [
+          "luciernaga",
+          17,
+          70,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          78,
+          85,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          70,
+          74,
+          1.6,
+          "static"
+        ]
+      ],
+      "title": "La gran fiesta",
+      "background": "assets/fondos/fondo-10-la-gran-fiesta.png",
+      "foreground": "assets/delanteras/delantera-10-la-gran-fiesta.png"
+    }
+  ]
+}

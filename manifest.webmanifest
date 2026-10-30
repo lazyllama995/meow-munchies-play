@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Meow Munchies",
+  "short_name": "Meow Munchies",
+  "description": "Jump, match, and serve delicious treats in a cozy cat café puzzle adventure.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff8ed",
+  "theme_color": "#fff8ed",
+  "lang": "en",
+  "icons": [
+    {"src": "assets/meow-munchies/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/meow-munchies/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diez escenas · Región 1</title>
+<link rel="stylesheet" href="scenes.css">
+</head>
+<body>
+<header>
+<div><span class="eyebrow">REGIÓN 1 · LA FIESTA PERDIDA</span><h1>Un valle con vida</h1><p>Diez fondos de gameplay con sus capas de ambiente.</p></div>
+<a id="download-background" class="download" href="assets/fondos/fondo-01-el-nido-de-petalos.png" download>Descargar fondo · PNG</a>
+</header>
+<main>
+<section class="stage" id="stage" aria-label="Escena del capítulo">
+<img id="background" class="plate" alt="">
+<div id="ambient" class="scene-layer"></div>
+<div class="dragon-pin gameplay"><img id="dragon" alt="Dragón protagonista"></div>
+<img id="foreground" class="plate front" alt="Vegetación delantera">
+<div id="board" class="gameplay"></div>
+<div class="hud gameplay" aria-hidden="true">
+<div class="order-card"><span class="level">NIVEL 2</span><span class="objective"><span id="objective-marble"></span><span>1 <small>/ 2</small></span></span></div>
+<span class="menu-icon"><i></i><i></i><i></i></span>
+</div>
+<div class="tools gameplay" aria-hidden="true"><span class="lives"><b>♥</b> 5</span><span class="hint"><b>✦</b> Pista</span></div>
+<div class="loading" id="loading">Montando escena…</div>
+</section>
+<aside>
+<span class="eyebrow">CAPÍTULO <span id="number">01</span> / 10</span><h2 id="title"></h2>
+<select id="chapter" aria-label="Capítulo"></select>
+<div class="actions"><button id="pause" aria-pressed="false">Pausar ambiente</button></div>
+<div class="options"><label><input id="environment-only" type="checkbox"> Solo ambiente</label><label><input id="front-visible" type="checkbox" checked> Capa delantera</label></div>
+
+<div id="thumbnails" class="thumbnails" aria-label="Los diez capítulos"></div>
+<p class="note">Los árboles y la decoración están dibujados en el fondo. Globos y aspas se mueven suavemente en sus propias capas.</p>
+<a class="guide" href="README.md">Guía de montaje ↗</a>
+</aside>
+</main>
+<script src="scene-data.js"></script>
+<script src="scenes.bundle.js"></script>
+</body>
+</html>

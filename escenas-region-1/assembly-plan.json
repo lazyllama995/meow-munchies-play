@@ -1,0 +1,243 @@
+{
+  "version": 2,
+  "title": "Región 1 · Diez escenas con amigos estáticos",
+  "scenes": [
+    {
+      "chapter": 1,
+      "animals": [
+        [
+          "conejo-blanco",
+          86,
+          91.4,
+          12,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 2,
+      "animals": [
+        [
+          "castor-carpintero",
+          13.2,
+          70.6,
+          17.5,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 3,
+      "animals": [
+        [
+          "topo-hortelano",
+          16,
+          81,
+          14,
+          "static"
+        ],
+        [
+          "topo-cosechador",
+          86,
+          87,
+          14,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 4,
+      "animals": [
+        [
+          "hormiga-miga",
+          6.5,
+          86,
+          6.2,
+          "static"
+        ],
+        [
+          "hormiga-fresa",
+          14.5,
+          88.5,
+          6.2,
+          "static"
+        ],
+        [
+          "hormiga-arandano",
+          23,
+          91,
+          6.2,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 5,
+      "animals": [
+        [
+          "rana-sentada",
+          13.3,
+          77.6,
+          10.4,
+          "static"
+        ],
+        [
+          "rana-sentada",
+          88,
+          80,
+          9.5,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 6,
+      "animals": [
+        [
+          "conejo-globero",
+          15.2,
+          81.8,
+          12.3,
+          "static"
+        ]
+      ],
+      "ambient": [
+        [
+          "globo-pera",
+          10,
+          19,
+          12,
+          "float"
+        ],
+        [
+          "globo-melocoton",
+          90,
+          20,
+          12.5,
+          "float"
+        ]
+      ]
+    },
+    {
+      "chapter": 7,
+      "animals": [
+        [
+          "mariquita-guia",
+          14,
+          90.5,
+          7.5,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 8,
+      "animals": [
+        [
+          "raton-panadero",
+          23,
+          82,
+          16,
+          "static"
+        ]
+      ],
+      "ambient": [
+        [
+          "molino-aspas",
+          87.7,
+          61.2,
+          29,
+          "rotate"
+        ]
+      ]
+    },
+    {
+      "chapter": 9,
+      "animals": [
+        [
+          "buho-amigo",
+          10.7,
+          74.6,
+          13.5,
+          "static"
+        ],
+        [
+          "luciernaga",
+          13,
+          83,
+          1.8,
+          "static"
+        ],
+        [
+          "luciernaga",
+          87,
+          77.5,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          8,
+          65,
+          1.5,
+          "static"
+        ]
+      ]
+    },
+    {
+      "chapter": 10,
+      "animals": [
+        [
+          "castor-fiesta",
+          9.5,
+          80.8,
+          14.5,
+          "static"
+        ],
+        [
+          "conejo-fiesta",
+          25,
+          83.2,
+          12.3,
+          "static"
+        ],
+        [
+          "raton-fiesta",
+          91.5,
+          86.6,
+          13,
+          "static"
+        ],
+        [
+          "rana-sentada",
+          81.8,
+          90.5,
+          10.5,
+          "static"
+        ],
+        [
+          "luciernaga",
+          17,
+          70,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          78,
+          85,
+          1.7,
+          "static"
+        ],
+        [
+          "luciernaga",
+          70,
+          74,
+          1.6,
+          "static"
+        ]
+      ]
+    }
+  ],
+  "animalMotion": "static"
+}

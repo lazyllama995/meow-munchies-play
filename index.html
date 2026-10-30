@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8ed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="Jump, match, and serve delicious treats in a cozy cat café puzzle adventure.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/meow-munchies/app-icon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/meow-munchies/app-icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Meow Munchies">
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="meta.css">
+<link rel="stylesheet" href="button-art.css">
+<title>Meow Munchies · Jump, match, and serve</title>
+</head>
+<body>
+<main class="splash-pending" id="game" aria-label="Meow Munchies café puzzle">
+  <div id="board-backdrop" aria-hidden="true"></div>
+  <div id="gameplay-ambient" aria-hidden="true"></div>
+  <img id="dragon-layer" src="assets/meow-munchies/miso-idle-v2.png" alt="" aria-hidden="true">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <img id="foreground-rocks" src="assets/glow-foreground-v1.webp" alt="" aria-hidden="true">
+  <header class="hud" id="game-hud">
+    <div class="hud-mission">
+      <button id="levels-open" class="level-info" aria-label="Lives"><span aria-hidden="true">♥</span><span id="hud-lives-count">5</span><span id="level-label" hidden>LEVEL 1</span></button>
+      <section id="order-card" class="order-card" aria-label="Café order">
+        <div id="objectives" class="objectives"></div>
+        <div class="order-track"><div id="order-fill"></div></div>
+      </section>
+    </div>
+    <div class="hud-economy"><span class="hud-currency hud-coins" aria-label="Coins"><i aria-hidden="true"></i><b id="hud-coins-count">0</b></span><span class="hud-currency hud-diamonds" aria-label="Diamonds"><i aria-hidden="true"></i><b id="hud-diamonds-count">0</b></span><button id="menu-open" class="menu-button pause-open" aria-label="Pause game" aria-haspopup="dialog"><span aria-hidden="true"></span></button></div>
+  </header>
+  <div id="board-controls" role="group" aria-label="Classic 33-position board"></div>
+  <div id="instruction" class="instruction" role="status"></div>
+  <div id="feedback" class="feedback" aria-hidden="true"><img id="feedback-art" alt=""></div>
+  <div id="meta-reward" class="meta-reward" hidden aria-hidden="true"></div>
+  <div id="chain-banner" class="chain-banner" aria-hidden="true"></div>
+  <div id="chain-glow" class="chain-glow" aria-hidden="true"></div>
+  <div id="lost-heart" class="lost-heart" aria-hidden="true" hidden>
+    <svg viewBox="0 0 100 100" focusable="false">
+      <defs>
+        <linearGradient id="lost-heart-enamel" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#ff9d9a"/><stop offset=".42" stop-color="#f36b73"/><stop offset="1" stop-color="#bf3b55"/></linearGradient>
+        <clipPath id="lost-heart-clip-left"><path d="M0 0H50L45 37 55 47 44 58 50 88V100H0Z"/></clipPath>
+        <clipPath id="lost-heart-clip-right"><path d="M50 0H100V100H50V88L44 58 55 47 45 37Z"/></clipPath>
+        <g id="lost-heart-shape"><path d="M50 88C40 79 8 59 8 31C8 10 37 5 50 24C63 5 92 10 92 31C92 59 60 79 50 88Z" fill="url(#lost-heart-enamel)" stroke="#a8364b" stroke-width="2"/><path d="M18 32C18 19 30 15 37 21" fill="none" stroke="#fff4e8" stroke-width="7" stroke-linecap="round" opacity=".85"/><path d="M76 29C84 38 79 54 67 65" fill="none" stroke="#ad2f48" stroke-width="3" stroke-linecap="round" opacity=".55"/></g>
+      </defs>
+      <g id="lost-heart-left" clip-path="url(#lost-heart-clip-left)"><use href="#lost-heart-shape"/></g>
+      <g id="lost-heart-right" clip-path="url(#lost-heart-clip-right)"><use href="#lost-heart-shape"/></g>
+    </svg>
+    <small>−1 life</small><span id="lost-life-remaining" class="lost-life-remaining"></span>
+    <i class="lost-shard" style="--dx:-70px;--dy:-50px;--r:-40deg"></i><i class="lost-shard" style="--dx:64px;--dy:-58px;--r:35deg"></i><i class="lost-shard" style="--dx:-86px;--dy:20px;--r:-70deg"></i><i class="lost-shard" style="--dx:90px;--dy:14px;--r:60deg"></i><i class="lost-shard" style="--dx:-40px;--dy:70px;--r:-20deg"></i><i class="lost-shard" style="--dx:46px;--dy:76px;--r:25deg"></i>
+  </div>
+  <button type="button" id="win-burst" class="win-burst" hidden aria-label="Order served. Continue to map"><img id="win-burst-art" alt=""></button>
+  <section id="victory-sequence" class="victory-sequence" hidden aria-live="polite" aria-labelledby="victory-title">
+    <div class="victory-title-wrap"><span class="victory-kicker">ORDER COMPLETE</span><h1 id="victory-title">YOU WIN!</h1></div>
+    <div class="victory-rewards" aria-label="Level rewards">
+      <div class="victory-reward victory-coins"><i aria-hidden="true"></i><span><small>Coins</small><b id="victory-coins-count">0</b></span></div>
+      <div class="victory-reward victory-diamonds"><i aria-hidden="true"></i><span><small>Diamonds</small><b id="victory-diamonds-count">0</b></span></div>
+    </div>
+    <button id="victory-continue" class="primary victory-continue" type="button">CONTINUE</button>
+  </section>
+  <nav class="play-tools" id="play-tools" aria-label="Gameplay tools">
+    <button id="undo" class="game-booster undo-booster" type="button"><span class="booster-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path class="booster-arrow" d="M13 20a14 14 0 1 1 3 16"/><path class="booster-arrow" d="m13 11-1 10 10-1"/></svg></span><b id="undo-count">10</b></button>
+    <button id="quick-hint" class="game-booster hint-booster" type="button"><span class="booster-icon" aria-hidden="true"></span><b id="hint-count">3</b></button>
+    <button id="lives-open" class="lives-button sr-only" aria-label="Lives"><span id="lives-count">5</span></button>
+  </nav>
+  <section id="result" class="result" hidden aria-live="polite"><div id="result-symbol" aria-hidden="true">✓</div><span id="result-eyebrow" class="eyebrow">ORDER COMPLETE</span><h1 id="result-title"><span id="result-title-text"></span><img id="result-art" alt="" hidden></h1><p id="result-copy"></p><p id="result-detail"></p><button id="result-primary" class="primary" data-button-art="teal-pill"></button><button id="result-secondary" class="quiet" data-button-art="cream-pill">Replay Level</button></section>
+  <div id="level-transition" class="level-transition" hidden role="status" aria-live="polite">
+    <div class="level-transition-card">
+      <strong id="transition-level">LEVEL 2</strong>
+      <div id="transition-goals" class="transition-goals" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div id="loading" class="loading splash"><div class="splash-logo-shell"><img id="splash-logo" fetchpriority="high" decoding="async" src="assets/meow-munchies/logo.svg" alt="Meow Munchies"><span class="splash-logo-shine" aria-hidden="true"></span></div><div class="splash-action"><button id="splash-play" class="primary" disabled data-button-art="teal-pill">Play</button></div><span id="splash-status" role="status">Opening Miso's café…</span></div>
+  <dialog id="mechanic-intro" aria-labelledby="mechanic-title" aria-describedby="mechanic-copy mechanic-tip">
+    <span class="eyebrow">A NEW DISCOVERY</span>
+    <h2 id="mechanic-title"></h2>
+    <div class="mechanic-demonstration" aria-hidden="true"><canvas id="mechanic-demo" width="600" height="290"></canvas><span id="mechanic-step"></span></div>
+    <p id="mechanic-copy"></p>
+    <p id="mechanic-tip"></p>
+    <button id="mechanic-ready" class="primary" type="button" data-button-art="teal-pill">Let's Try It!</button>
+  </dialog>
+  <section id="loss-notice" class="loss-notice" role="dialog" aria-modal="true" aria-labelledby="loss-title" hidden>
+    <strong id="loss-title">No Moves Left</strong>
+    <p id="loss-copy" role="status"></p>
+    <p id="loss-detail"></p>
+    <div id="loss-actions" class="loss-actions" hidden>
+      <button id="loss-undo" class="quiet" type="button">Undo · <span id="loss-undo-count">0</span></button>
+      <button id="loss-retry" class="primary" type="button" data-button-art="teal-pill">Restart</button>
+      <button id="loss-map" class="quiet" type="button" data-button-art="cream-pill">Quit</button>
+    </div>
+  </section>
+  <dialog id="lives-dialog" class="life-dialog" aria-labelledby="lives-title" aria-describedby="lives-copy">
+    <div class="life-heart" aria-hidden="true">♥</div>
+    <h2 id="lives-title">Your Lives</h2>
+    <div class="life-balance"><span aria-hidden="true">♥</span> <strong id="lives-balance"></strong></div>
+    <p id="lives-copy">A failed attempt costs one life. You recover one every 30 minutes, even while away.</p>
+    <p id="lives-recharge" class="life-recharge"></p>
+    <button id="lives-watch" class="primary" type="button" data-button-art="teal-pill">Watch video · +1 life</button>
+    <button id="lives-close" class="quiet" type="button" data-button-art="cream-pill">Keep Playing</button>
+    <button id="lives-map" class="quiet" type="button" data-button-art="cream-pill">Return to Map</button>
+  </dialog>
+  <dialog id="reward-offer" aria-labelledby="reward-title" aria-describedby="reward-copy">
+    <span class="eyebrow">EXTRA HELP</span>
+    <h2 id="reward-title"></h2>
+    <p id="reward-copy"></p>
+    <button id="reward-watch" class="primary" type="button" data-button-art="teal-pill">Watch Demo Video · 3s</button>
+    <button id="reward-cancel" class="quiet" type="button" data-button-art="cream-pill">Not Now</button>
+  </dialog>
+  <dialog id="reward-video" aria-labelledby="reward-video-title" aria-describedby="reward-video-copy">
+    <div class="reward-video-content">
+      <span class="eyebrow">DEMO</span>
+      <h2 id="reward-video-title">Demo Video</h2>
+      <p id="reward-video-copy">Your reward arrives when the video ends.</p>
+      <strong id="reward-countdown" aria-live="polite">3</strong>
+      <progress id="reward-progress" max="3" value="0" aria-label="Video elapsed time"></progress>
+    </div>
+  </dialog>
+  <dialog id="pause-menu" class="pause-menu" aria-labelledby="pause-title">
+    <div class="pause-head"><span class="eyebrow">CAFÉ BREAK</span><h2 id="pause-title">Pause</h2></div>
+    <div class="pause-options" aria-label="Pause settings">
+      <button id="pause-music" class="pause-option" type="button" aria-pressed="true"><span aria-hidden="true">♪</span><b>Music</b></button>
+      <button id="pause-sound" class="pause-option" type="button" aria-pressed="true"><span aria-hidden="true">◖))</span><b>Sound</b></button>
+      <button id="pause-haptics" class="pause-option" type="button" aria-pressed="true"><span aria-hidden="true">≋</span><b>Vibration</b></button>
+      <button id="pause-howto" class="pause-option" type="button" aria-expanded="false"><span aria-hidden="true">?</span><b>How to Play</b></button>
+    </div>
+    <div id="pause-howto-copy" class="pause-howto-copy" hidden>
+      <p><strong>Jump a munchie</strong> over another treat into an empty plate.</p>
+      <p>The jumped treat flies to Miso and fills the café order above.</p>
+      <p>Complete every objective to finish the level.</p>
+    </div>
+    <div class="pause-actions"><button id="pause-continue" class="pause-continue" type="button">Continue</button><button id="pause-quit" class="pause-quit" type="button">Quit</button></div>
+  </dialog>
+  <dialog id="menu" class="game-menu" aria-labelledby="menu-title">
+    <div class="dialog-head"><div><span class="eyebrow">CAFÉ BREAK</span><h2 id="menu-title">Paused</h2></div><button id="menu-close" class="close-button" aria-label="Close menu" data-button-art="cream-circle">×</button></div>
+    <div class="menu-body">
+      <section class="menu-section" aria-labelledby="quick-title">
+        <h3 id="quick-title">Quick actions</h3>
+        <div class="menu-actions"><button id="hint" data-button-art="cream-tile"><span aria-hidden="true">✦</span>Hint</button><button id="restart" data-button-art="cream-tile"><span aria-hidden="true">↻</span>Restart</button><button id="quit" class="destructive" data-button-art="coral-pill"><span aria-hidden="true">↩</span>Quit</button></div>
+        <button id="menu-lives" class="menu-life-status" data-button-art="cream-pill"><span aria-hidden="true">♥</span> <span id="menu-lives-count">5 of 5 lives</span><span aria-hidden="true">›</span></button>
+      </section>
+      <section class="menu-section levels-section" aria-labelledby="browse-title">
+        <h3 id="browse-title">Your Adventure</h3>
+        <button id="menu-levels" class="levels-entry" data-button-art="cream-tile"><span class="entry-icon" aria-hidden="true">▦</span><span><strong>Explore Levels</strong><small id="menu-level-progress">One order at a time</small></span><span class="entry-arrow" aria-hidden="true">›</span></button>
+        <button id="challenge-open" class="levels-entry challenge-entry" hidden data-button-art="cream-tile"><span class="entry-icon" aria-hidden="true">✦</span><span><strong>Try level 600</strong><small>Grand tasting prototype</small></span><span class="entry-arrow" aria-hidden="true">›</span></button>
+      </section>
+      <details class="menu-section menu-disclosure"><summary>Settings <span aria-hidden="true">⌄</span></summary><div class="section-content">
+        <label class="setting">Music and Sound Effects<input id="sound" type="checkbox" role="switch" checked></label>
+        <div class="music-setting"><label for="music-track">Background Music</label><div class="music-choice"><select id="music-track" aria-label="Background music"></select><button type="button" id="music-preview" aria-label="Play the selected song from the beginning" data-button-art="teal-pill">▶ Preview</button></div><small>Choose a song and preview it here. Your choice is saved.</small></div>
+        <label class="setting">Vibration<input id="haptics" type="checkbox" role="switch" checked></label>
+        <label class="setting">Reduced Motion<input id="motion" type="checkbox" role="switch"></label>
+        <label class="setting" hidden>Watercolor Style<input id="storybook-style" type="checkbox" role="switch"></label>
+        <div class="meta-setting" hidden><label class="setting">Diamonds and Album<input id="meta-mode" type="checkbox" role="switch"></label><small id="meta-mode-note">Adds Diamonds, Pachinkat, the Shop, and neighborhood cats around the map.</small>
+          <div id="meta-test-tools" class="meta-test-tools" hidden><button id="meta-fill-lives" type="button" data-button-art="cream-pill">♥ Fill Lives (testing)</button></div></div>
+        <div class="reset-setting"><button id="reset-progress-open" class="quiet" type="button" aria-haspopup="dialog" data-button-art="coral-pill">Reset Progress</button><small>Start again from level 1.</small></div>
+      </div></details>
+      <details class="menu-section menu-disclosure"><summary>How to Play <span aria-hidden="true">⌄</span></summary><div class="section-content">
+        <ol class="howto-steps"><li><strong>Jump a munchie.</strong><p>Move one treat over another into an empty plate, horizontally or vertically.</p></li><li><strong>Serve it to Miso.</strong><p>The treat you jump over flies down to Miso and counts toward today's café order.</p></li><li><strong>Complete the order.</strong><p>Serve every treat shown above. Other treats may remain on the board.</p></li></ol>
+        <p class="howto-tip">Wrapped munchies need two jumps: the first opens the wrapper and the second serves the treat. Ceramic saucers are fixed supports: you can jump over them, but they never enter the order.</p>
+        <p class="howto-tip">You can also tap a treat, then tap the empty plate. You start with 5 lives. If the order becomes impossible, you lose one life and return to the last proven safe position. One life recharges every 30 minutes.</p>
+        <p class="howto-tip">You start with 5 hints and earn one the first time you finish each chapter. You can get another hint or life by watching the 3-second demo video.</p>
+      </div></details>
+    </div>
+    <div class="menu-footer"><button id="resume" class="primary" data-button-art="teal-pill">Continue</button></div>
+  </dialog>
+  <dialog id="life-warning" class="life-warning" aria-labelledby="life-warning-title" aria-describedby="life-warning-copy">
+    <span class="eyebrow">ATTEMPT IN PROGRESS</span><h2 id="life-warning-title">Lose 1 Life?</h2>
+    <p id="life-warning-copy">Restarting or leaving now will cost 1 life.</p>
+    <button id="life-warning-confirm" class="primary" type="button">Continue</button>
+    <button id="life-warning-cancel" class="quiet" type="button">Cancel</button>
+  </dialog>
+  <dialog id="reset-progress-dialog" aria-labelledby="reset-progress-title" aria-describedby="reset-progress-copy">
+    <span class="eyebrow">START OVER</span>
+    <h2 id="reset-progress-title">Reset Your Progress?</h2>
+    <p id="reset-progress-copy">Completed levels will be erased. You will return to level 1 with 5 lives and 5 hints, and tutorials will appear again. Your settings are preserved.</p>
+    <p id="reset-progress-error" role="alert" hidden>Your reset could not be saved. Please try again.</p>
+    <button id="reset-progress-cancel" class="primary" type="button" autofocus data-button-art="teal-pill">Cancel</button>
+    <button id="reset-progress-confirm" class="quiet" type="button" data-button-art="coral-pill">Yes, Reset Progress</button>
+  </dialog>
+  <dialog id="level-menu" aria-labelledby="levels-title">
+    <div class="dialog-head"><div><span class="eyebrow">ONE ORDER AT A TIME</span><h2 id="levels-title">Whisker Lane</h2></div><button id="levels-close" class="close-button" aria-label="Return to game" data-button-art="cream-circle">×</button></div>
+    <p id="campaign-progress"></p><div id="level-grid" class="level-grid"></div>
+    <select id="level-select" hidden aria-label="Game mode"></select>
+    <div class="levels-footer"><p class="install-note">Your progress is saved in this browser.</p><button id="campaign-continue" class="primary" data-button-art="teal-pill">Continue</button></div>
+  </dialog>
+  <div id="rotate" role="status"><strong>Rotate Your Phone</strong><span>This puzzle is designed for portrait mode.</span></div>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+</main>
+<section id="level-map" aria-label="Level map" hidden></section>
+<script type="module" src="game.js"></script>
+</body>
+</html>

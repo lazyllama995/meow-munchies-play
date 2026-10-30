@@ -1,0 +1,103 @@
+/* Image-generated candy enamel. Labels stay live for counters and accessibility. */
+#game button[data-button-art],
+.sphere-root button[data-button-art],
+#level-menu .chapter-levels button {
+  --button-image: url('/assets/ui/buttons/cream-pill-v1.webp');
+  --button-height: 48px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-image: var(--button-image) 0 128 fill / 0 calc(var(--button-height) / 2) / 0 stretch;
+  border-radius: 999px;
+  box-shadow: none;
+  height: var(--button-height);
+  min-height: var(--button-height);
+  color: #255e57;
+  font-weight: 850;
+  text-shadow: 0 1px 0 #fff9;
+  transition: transform .12s ease, filter .12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+#game button[data-button-art='teal-pill'],
+.sphere-root button[data-button-art='teal-pill'],
+#level-menu .chapter-levels button.current {
+  --button-image: url('/assets/ui/buttons/teal-pill-v1.webp');
+  color: #fffef3;
+  text-shadow: 0 1px 2px #07584c;
+}
+#game button[data-button-art='coral-pill'],
+.sphere-root button[data-button-art='coral-pill'] {
+  --button-image: url('/assets/ui/buttons/coral-pill-v1.webp');
+  color: #fffef3;
+  text-shadow: 0 1px 2px #9c2136;
+}
+#game button[data-button-art='cream-tile'],
+#level-menu .chapter-levels button {
+  --button-image: url('/assets/ui/buttons/cream-tile-v1.webp');
+  border-image: var(--button-image) 72 fill / calc(var(--button-height) / 4) / 0 stretch;
+  border-radius: 20px;
+}
+#game #splash-play { --button-height: 58px; }
+#game #menu .menu-actions button { --button-height: 79px; }
+#game button.levels-entry[data-button-art] {
+  --button-image: url('/assets/ui/buttons/cream-pill-v1.webp');
+  --button-height: 70px;
+  border-image: var(--button-image) 0 128 fill / 0 35px / 0 stretch;
+  padding-inline: 24px;
+}
+#game button[data-button-art='teal-square'] {
+  --button-image: url('/assets/ui/buttons/teal-square-v1.webp');
+  border-image: none;
+  background: var(--button-image) center / 100% 100% no-repeat;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  border-radius: 13px;
+  color: #fffef3;
+  text-shadow: 0 1px 2px #07584c;
+}
+#game button[data-button-art='cream-circle'],
+.sphere-root button[data-button-art='cream-circle'] {
+  border-image: none;
+  background: url('/assets/ui/buttons/cream-circle-v1.webp') center / 100% 100% no-repeat;
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}
+#game button[data-button-art]:not(:disabled):active,
+.sphere-root button[data-button-art]:not(:disabled):active {
+  transform: translateY(2px) scale(.98);
+  box-shadow: none;
+}
+@media (hover: hover) {
+  #game button[data-button-art]:not(:disabled):hover,
+  .sphere-root button[data-button-art]:not(:disabled):hover { filter: brightness(1.07); }
+}
+#game button[data-button-art]:disabled,
+.sphere-root button[data-button-art]:disabled,
+#level-menu .chapter-levels button:disabled { filter: grayscale(.65); opacity: .55; cursor: not-allowed; }
+#game .setting input[role='switch'] {
+  background: url('/assets/ui/buttons/cream-pill-v1.webp') center / auto 100% no-repeat;
+}
+#game .setting input[role='switch']:checked {
+  background-image: url('/assets/ui/buttons/teal-pill-v1.webp');
+}
+#game .setting input[role='switch']::before {
+  background: url('/assets/ui/buttons/cream-circle-v1.webp') center / contain no-repeat;
+  box-shadow: none;
+}
+#game .menu-disclosure { box-shadow: none; }
+#game .menu-disclosure > summary {
+  background: transparent;
+  border: 1px solid transparent;
+  border-image: url('/assets/ui/buttons/cream-pill-v1.webp') 0 128 fill / 0 27px / 0 stretch;
+  color: #255e57;
+  text-shadow: 0 1px 0 #fff9;
+}
+.sphere-root button[data-button-art]:focus-visible { outline: 3px solid #ecae62; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  #game button[data-button-art], .sphere-root button[data-button-art] { transition: none; }
+}
+#game.reduced-motion button[data-button-art] { transition: none; }
